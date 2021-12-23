@@ -383,7 +383,30 @@
 										</div>
 									</div>
 								</form>
+								<!-- overlay -->
+								<div id="myOverlay" class="overlay">
+								  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+								  <div class="overlay-content">
+								    <form action="action_page.php">
+								      <input type="text" placeholder="Search.." name="search">
+								      <button type="submit"><i class="fa fa-search"></i></button>
+								    </form>
+								  </div>
+								</div>
+								<h2>Fullscreen Search</h2>
+									<p>Click on the button to open the search box.</p>
+									<button class="openBtn" onclick="openSearch()">Open Search Box</button>
+								<script>
+								// Open the full screen search box
+									function openSearch() {
+									  document.getElementById("myOverlay").style.display = "block";
+									}
 
+									// Close the full screen search box
+									function closeSearch() {
+									  document.getElementById("myOverlay").style.display = "none";
+									}
+								</script>
 							<!-- Image -->
 								<h3>Image</h3>
 

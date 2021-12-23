@@ -32,9 +32,62 @@
 					<li><a href="photoshop.html">Photoshop</a></li>
 					<li><a href="illustrator.html">Illustrator</a></li>
 					<li><a href="misc.html">Miscellaneous</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+					<li><a href="misc.html">About</a></li>
+					<div>
+						<div><button id="searchBtn"class="button alt fa fa-search" onclick="openSearch()" style="font-family: FontAwesome, sans-serif; font-style: normal;-webkit-tap-highlight-color: rgba(144, 144, 144, 0.25); float:left; margin-bottom: -10px;"> Search Projects</button></div>
+					</div>
 				</ul>
 			</nav>
 
+			<script>
+					function myFunction() {
+					  // Declare variables
+					  var input, filter, ul, li, a, i, txtValue;
+					  input = document.getElementById('myInput');
+					  filter = input.value.toUpperCase();
+					  ul = document.getElementById("myUL");
+					  li = ul.getElementsByTagName('li');
+
+					  // Loop through all list items, and hide those who don't match the search query
+					  for (i = 0; i < li.length; i++) {
+					    a = li[i].getElementsByTagName("a")[0];
+					    txtValue = a.textContent || a.innerText;
+					    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+					      li[i].style.display = "";
+					    } else {
+					      li[i].style.display = "none";
+					    }
+					  }
+					}
+
+					function openSearch() {
+						window.location.href = "index.html#featured";
+						document.getElementById("myOverlay").style.display = "block";
+					}
+
+					// Close the full screen search box
+					function closeSearch() {
+						document.getElementById("myOverlay").style.display = "none";
+					}
+				</script>
+				<!-- overlay -->
+				<div id="myOverlay" class="overlay">
+					<span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+					<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+					<ul id="myUL">
+					  <li><a href="#">Adele</a></li>
+					  <li><a href="#">Agnes</a></li>
+
+					  <li><a href="#">Billy</a></li>
+					  <li><a href="#">Bob</a></li>
+
+					  <li><a href="#">Calvin</a></li>
+					  <li><a href="#">Christina</a></li>
+					  <li><a href="#">Cindy</a></li>
+					</ul>
+				</div>
 		<!-- Banner -->
 			<section class="banner full">
 				<article>
@@ -86,7 +139,7 @@
  		<br><br/>
 			<header class="align-center">
 				<p class="special">Some recent projects and achievements</p>
-				<h2>Featured Projects</h2>
+				<h2 id="featured">Featured Projects</h2>
 			</header>
 
 			<!-- One -->
@@ -169,6 +222,63 @@
 								</div>
 							</div>
 						</section>
+						<!-- About -->
+			 </hr>
+
+
+						<!-- contact form -->
+			 </hr>
+				<div id="contact" style="scroll-margin-top: 40px;">
+					<center>
+						<h3 style="padding-top: 30px;">Contact Me</h3>
+
+						<form method="post" action="https://formspree.io/f/xoqrqgzz" style="padding-right: 50px;padding-left: 50px;padding-top: 20px;">
+							<div class="row uniform">
+								<div class="6u 12u$(xsmall)">
+									<input type="text" name="name" id="name" value="" placeholder="Name" />
+								</div>
+								<div class="6u$ 12u$(xsmall)">
+									<input type="email" name="email" id="email" value="" placeholder="Email" />
+								</div>
+								<!-- Break -->
+								<div class="12u$">
+									<div class="select-wrapper">
+										<select name="category" id="category">
+											<option value="">- Category -</option>
+											<option value="1">Business</option>
+											<option value="1">Employer</option>
+											<option value="1">Personal</option>
+										</select>
+									</div>
+								</div>
+								<!-- Break -->
+								<div class="4u 12u$(small)">
+									<input type="radio" id="priority-low" name="priority" checked>
+									<label for="priority-low">Low Priority</label>
+								</div>
+								<div class="4u 12u$(small)">
+									<input type="radio" id="priority-normal" name="priority">
+									<label for="priority-normal">Normal Priority</label>
+								</div>
+								<div class="4u$ 12u$(small)">
+									<input type="radio" id="priority-high" name="priority">
+									<label for="priority-high">High Priority</label>
+								</div>
+								<!-- Break -->
+								<div class="12u$">
+									<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+								<!-- Break -->
+								<div class="12u$">
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" /></li>
+										<li><input type="reset" value="Reset" class="alt" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</center>
+				</div>
 		<!-- Footer -->
 		<footer id="footer">
 				<!--<div class="container">
