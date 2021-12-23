@@ -34,43 +34,10 @@
 					<li><a href="misc.html">Miscellaneous</a></li>
 					<li><a href="index.html#contact">Contact</a></li>
 					<li><a href="misc.html">About</a></li>
-					<div>
-						<div><button id="searchBtn"class="button alt fa fa-search" onclick="openSearch()" style="font-family: FontAwesome, sans-serif; font-style: normal;-webkit-tap-highlight-color: rgba(144, 144, 144, 0.25); float:left; margin-bottom: -10px;"> Search Projects</button></div>
-					</div>
+					<li><a href="search.html" id="searchBtn"class="button alt fa fa-search" style="font-family: FontAwesome, sans-serif; font-style: normal;-webkit-tap-highlight-color: rgba(144, 144, 144, 0.25); float:left; margin-bottom: -10px;"> Search Projects</a></li>
 				</ul>
 			</nav>
 
-			<script>
-					function myFunction() {
-					  // Declare variables
-					  var input, filter, ul, li, a, i, txtValue;
-					  input = document.getElementById('myInput');
-					  filter = input.value.toUpperCase();
-					  ul = document.getElementById("myUL");
-					  li = ul.getElementsByTagName('li');
-
-					  // Loop through all list items, and hide those who don't match the search query
-					  for (i = 0; i < li.length; i++) {
-					    a = li[i].getElementsByTagName("a")[0];
-					    txtValue = a.textContent || a.innerText;
-					    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-					      li[i].style.display = "";
-					    } else {
-					      li[i].style.display = "none";
-					    }
-					  }
-					}
-
-					function openSearch() {
-						window.location.href = "index.html#featured";
-						document.getElementById("myOverlay").style.display = "block";
-					}
-
-					// Close the full screen search box
-					function closeSearch() {
-						document.getElementById("myOverlay").style.display = "none";
-					}
-				</script>
 				<!-- overlay -->
 				<div id="myOverlay" class="overlay">
 					<span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
