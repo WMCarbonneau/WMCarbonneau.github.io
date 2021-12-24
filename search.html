@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Search for Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/search.css" />
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html">William Carbonneau<span> Portfolio</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+          <li><a href="index.html">Home</a></li>
+					<li><a href="blender.html">Blender 3D</a></li>
+					<li><a href="code.html">Programming</a></li>
+					<li><a href="Adobe.html">Adobe Projects</a></li>
+					<li><a href="misc.html">Miscellaneous</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="search.html" id="searchBtn"class="button alt fa fa-search" style="font-family: FontAwesome, sans-serif; font-style: normal;-webkit-tap-highlight-color: rgba(255, 255, 255, 0.25); margin-top: -0.5px;"> Search Projects</a></li>
+					<a href="https://github.com/WMCarbonneau" class="icon fa-github" style="font-size: 2.5rem; padding-top: 3.5px; float: left; color: rgba(255, 255, 255, 0.25);"></a>
+
+				</ul>
+			</nav>
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>You may be lost</p>
+						<h2>Search Below to Find What You're Looking For</h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							<header class="align-center">
+								<p>Search by Project Name or Description</p>
+									<div class="row uniform" style="padding-top: 20px;">
+										<div class="12u 12u$(small)">
+											<input type="text" name="query" id="query" value="" onkeyup="myFunction()" placeholder="Type here to search" />
+										</div>
+							</header>
+              <ul id="myUL" class="alt" style="margin-top: -1px; padding: 12px; color: black;">
+                <li><a href="#">Swamp project in: Blender 3D</a></li>
+                <li><a href="#">Cipher project in: Programming</a></li>
+                <li><a href="#">Raspberry Pi "Tripwire" in Miscellaneous</a></li>
+              </ul>
+            </div>
+					</div>
+				</div>
+			</section>
+      <script>
+      function myFunction() {
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('query');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName('li');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+      </script>
+		<!-- Footer -->
+			<footer id="footer">
+        <div class="copyright">
+  					&copy; William Carbonneau.
+  				</div>
+  			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
