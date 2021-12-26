@@ -4391,6 +4391,7 @@
   overflow-x: hidden; /* Disable horizontal scroll */
 	padding-top: 4rem;
 	float: left;
+	flex-basis: 0.2;
 
 }
 
@@ -4407,6 +4408,14 @@
   flex: 1;
   padding: 1px 16px;
 	float: right;
+	background-color: #f2f2f2;
+}
+
+/* article style for pasts */
+.articlebox {
+	background-color: #f2f2f2;
+  color: #a6a6a6;
+	padding: 3rem 1.5rem 1rem 1.5rem;
 }
 
 /* Fixes weird bug with white bar on ios DO NOT TOUCH */
