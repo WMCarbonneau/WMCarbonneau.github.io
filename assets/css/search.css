@@ -2581,7 +2581,7 @@
 	}
 
 	header p {
-		color: #bbb;
+		color: #878787;
 	}
 
 /* Table */
@@ -4400,6 +4400,11 @@
 	color: rgb(0,0,0)
 }
 
+.sidenav a:link {
+	text-decoration: none;
+	color: #444;
+}
+
 .rowss {
 	display: flex;
 }
@@ -4410,12 +4415,29 @@
 	float: right;
 	background-color: #f2f2f2;
 }
+img {max-width: 100%;}
 
 /* article style for pasts */
 .articlebox {
 	background-color: #f2f2f2;
-  color: #a6a6a6;
+  color: #878787;
 	padding: 3rem 1.5rem 1rem 1.5rem;
+}
+
+.articlebox p {
+	padding-top: 1rem;
+}
+
+.articlebox a {
+	display: block;
+	margin-top: 2rem;
+	margin-left: auto;
+  margin-right: auto;
+	width: 22em;
+}
+
+.inner {
+	scroll-margin-top: 40px;
 }
 
 /* Fixes weird bug with white bar on ios DO NOT TOUCH */
