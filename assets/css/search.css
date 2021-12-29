@@ -17,6 +17,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		overscroll-behavior: none;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -4451,7 +4452,6 @@ only screen and (min-device-pixel-ratio: 1.5){
   body{
     width:100%;
     overflow-x:hidden;
-		overflow-y:hidden;
   }
 
 }
