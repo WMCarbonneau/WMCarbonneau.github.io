@@ -75,11 +75,11 @@
 	// Get page links in modal
 	var links = document.getElementsByClassName("pageLink");
 
-	// for (let i = 0; i < links.length; i++) {
-	// 	i.addEventListener('click', function handleClick() {
-  // 		modal.style.display = "none";
-	// 	});
-	// }
+	for (let i = 0; i < links.length; i++) {
+		links[i].addEventListener('click', function handleClick() {
+  		modal.style.display = "none";
+		});
+	}
 
 	// When the user clicks on the button, open the modal
 	btn.onclick = function() {

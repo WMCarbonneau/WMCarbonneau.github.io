@@ -54,7 +54,7 @@
 	    <span class="close">&times;</span>
 			<ul class="alt" style="padding-left: 10px; padding-right: 10px; color: #444">
 				<h4 style="font-weight: 500; color: #444; padding-bottom: 0.8rem;">Projects on this page:</h4>
-				<li><a href="#swamp1" >Swamp render in Blender Cycles</a></li>
+				<li><a href="#swamp1" class="pageLink">Swamp render in Blender Cycles</a></li>
 			</ul>
 	  </div>
 
@@ -70,6 +70,15 @@
 
 	// Get the <span> element that closes the modal
 	var span = document.getElementsByClassName("close")[0];
+
+	// Get page links in modal
+	var links = document.getElementsByClassName("pageLink");
+
+	for (let i = 0; i < links.length; i++) {
+		links[i].addEventListener('click', function handleClick() {
+			modal.style.display = "none";
+		});
+	}
 
 	// When the user clicks on the button, open the modal
 	btn.onclick = function() {
