@@ -24,6 +24,7 @@
 		height: 100vh;
 		overflow-y: scroll;
 		-webkit-overflow-scrolling: touch;
+		overflow-x:hidden;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -4478,7 +4479,7 @@ img {max-width: 100%;}
 .articlebox {
 	background-color: #f2f2f2;
   color: #878787;
-	padding: 3rem 1.5rem 1rem 1.5rem;
+	padding: 3rem 2% 2% 1.5rem;
 }
 
 .articlebox p {
@@ -4490,7 +4491,7 @@ img {max-width: 100%;}
 	margin-top: 2rem;
 	margin-left: auto;
   margin-right: auto;
-	width: 22em;
+	width: 90%;
 }
 
 .inner {
