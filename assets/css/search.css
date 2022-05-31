@@ -4473,7 +4473,7 @@ img {max-width: 100%;}
 .articlebox {
 	background-color: #f2f2f2;
   color: #878787;
-	padding: 2.5rem 2% 2%;
+	padding: 5vh 2vw 2vw 5vh;
 }
 
 .articlebox p {
