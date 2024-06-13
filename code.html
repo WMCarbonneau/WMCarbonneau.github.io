@@ -61,6 +61,8 @@
 													<li><a href="#cipherc" class="pageLink">C caesar cipher command line application</a></li>
 													<li><a href="#Webserver_Rust_1" class="pageLink">Simple Rust Language Based Webserver</a></li>
 													<li><a href="#Rust_Sobel" class="pageLink">Rust Language Based Sobel Operator and Image Convolution</a></li>
+													<li><a href="#Cellular Automation" class="pageLink">Java/JavaFX Cellular Automation Team Project</a></li>
+													<li><a href="#Global Ilumination" class="pageLink">Java/JavaFX Global Illumination and Image Processing Application</a></li>
 
 												</ul>
 											</div>
@@ -91,7 +93,7 @@
 								<p>Basic C data manipulation and command line interface</p>
 								<h2>C Caesar Cipher & Command Line Application</h2>
 							</header>
-								<p>Using the standard library and a few other basic libraries, this program attempts to create a basic caesar cipher interface for
+								<p  style="text-align: center;">Using the standard library and a few other basic libraries, this program attempts to create a basic caesar cipher interface for
 								the command line. This should be memory safe enough, though I would not use it for anything that is "mission critical". This was my
 								first attempt at a C project after reading a manual for a few minutes.</p>
 								<a class="button alt" href="downloadable/cipher_c.zip" download="simple_cipher_in_c.zip">Download The Source Code</a>
@@ -107,7 +109,7 @@
 							<p>Webserver created in Rust using the Rust Book</p>
 							<h2>Simple Rust Language Based Webserver</h2>
 						</header>
-							<p>Upon reading the Rust Book, I completed the final project to build a multithreaded webserver, built to
+							<p style="text-align: center;">Upon reading the Rust Book, I completed the final project to build a multithreaded webserver, built to
 								serve basic HTML files. I then extended it with a library enabling ctrl-c keyboard interrupts to test my understanding.
 								You can access my project on the dedicated GitHub repository below.
 							</p>
@@ -117,23 +119,100 @@
 					</div>
 			</article>
 			<article class="articlebox">
-						<div class="inner" id="Rust_Sobel">
-						<div class="box">
-						<div class="content">
-							<header class="align-center">
-								<p>Kernel convolution of an image in Rust</p>
-								<h2>Rust Sobel Operator and Kernel Convolution</h2>
-							</header>
-							<div style=" margin-left: auto; margin-right: auto;width: 90%;">
-								<img style="display:inline-block" src="images/BeforeSobel.jpg" alt="Grayscale image of a woman before a sobel operation is used."/>
-								<img style="display:inline-block" src="images/ConvergedSobel.jpg" alt="Result of Sobel operation."/>
+					<div class="inner" id="Rust_Sobel">
+					<div class="box">
+					<div class="content">
+						<header class="align-center">
+							<p>Kernel convolution of an image in Rust</p>
+							<h2>Rust Sobel Operator and Kernel Convolution</h2>
+						</header>
+						<div style=" margin-left: auto; margin-right: auto;width: 90%;">
+							<img style="display:inline-block" src="images/BeforeSobel.jpg" alt="Grayscale image of a woman before a sobel operation is used."/>
+							<img style="display:inline-block" src="images/ConvergedSobel.jpg" alt="Result of Sobel operation."/>
+						</div>
+							<p>A program in rust used to convolve a kernel over an image. This results in the ability to run a Gaussian blur, a Sobel operation, and many other things. This version is hard coded for Sobel and Gaussian blur. The program is capable of making the image grayscale before running the operation.</p>
+							<a class="button alt" href="https://github.com/WMCarbonneau/Rust_Sobel_and_Gaussian-Blur_Convolution">Project Github Page</a>
+					</div>
+					</div>
+					</div>
+			</article>
+			<article class="articlebox">
+				<div class="inner" id="Cellular Automation">
+				<div class="box">
+				<div class="content">
+					<header class="align-center">
+						<p>Team Project in Java</p>
+						<h2>Cellular Automation in JavaFX</h2>
+					</header>
+						<p style="text-align: center;">A Java/JavaFX application created in FXML to run cellular automation simulations. Contains a user choice of 7 simulations. This was a team project for a CEGEP course  in which I was the team leader and lead designer.</p>
+						<a class="button alt" href="https://github.com/William-Carbonneau/wave-simulation">Project Github Page</a>
+				</div>
+				</div>
+				</div>
+			</article>
+			<article class="articlebox">
+				<div class="inner" id="Global Ilumination">
+				<div class="box">
+				<div class="content">
+					<header class="align-center">
+						<p>Team Project in Java</p>
+						<h2>Global Illumination Path Tracing and Image Processing</h2>
+					</header>
+						<div style=" margin-left: auto; margin-right: auto;width: 90%;">
+						<div class="isolated">
+							<div class="GalleryRow">
+								<div class="GalleryCol">
+									<img src="images\GlobalIllumination\RenderGlobalIllumination.jpg" alt="Default Render Engine: Global Illumination" onClick="expandImage(this);"/>
+								</div>
+								<div class="GalleryCol">
+									<img src="images\GlobalIllumination\RenderColouredLights.jpg" alt="Default Render Engine Demonstration of Coloured Lights" onClick="expandImage(this);"/>
+								</div>
+								<div class="GalleryCol">
+									<img src="images\GlobalIllumination\RenderRefractiveIndices.jpg" alt="Default Render Engine Demonstration of Refractive Indices" onClick="expandImage(this);"/>
+								</div>
+								<div class="GalleryCol">
+									<img src="images\GlobalIllumination\RenderPsycho.jpg" alt="&quot;Psycho&quot; Render Engine"onClick="expandImage(this);"/>
+								</div>
+								<div class="GalleryCol">
+									<img src="images\GlobalIllumination\RenderPsychoEdges.jpg" alt="&quot;Psycho&quot; Render Engine: Edge Detection" onClick="expandImage(this);"/>
+								</div>
 							</div>
-								<p>A program in rust used to convolve a kernel over an image. This results in the ability to run a Gaussian blur, a Sobel operation, and many other things. This version is hard coded for Sobel and Gaussian blur. The program is capable of making the image grayscale before running the operation.</p>
-								<a class="button alt" href="https://github.com/WMCarbonneau/Rust_Sobel_and_Gaussian-Blur_Convolution">Project Github Page</a>
+							<!-- Expanding image container -->
+						<div class="GalleryContainer">
+							<!-- Close the image -->
+							<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+						
+							<!-- Expanded image -->
+							<img id="expandedImg" style="width:100%">
+						
+							<!-- Image text -->
+							<div id="imgtext"></div>
 						</div>
+						<script>
+							function expandImage(imgs) {
+								// Get the expanded image
+								var expandImg = document.getElementById("expandedImg");
+								// Get the image text
+								var imgText = document.getElementById("imgtext");
+								// Use the same src in the expanded image as the image being clicked on from the grid
+								expandImg.src = imgs.src;
+								// Use the value of the alt attribute of the clickable image as text inside the expanded image
+								imgText.innerHTML = imgs.alt;
+								// Show the container element (hidden with CSS)
+								expandImg.parentElement.style.display = "block";
+}
+						</script>
+					</div>
+						 
 						</div>
-						</div>
-				</article>
+						<p style="text-align: center;">A Java/JavaFX application created in FXML.  Global Illumination path tracer and image processing by convolutions. 
+							Implementations of Sobel and Prewitt egde detection. Implementations of Gaussian blur with various kernel sizes. Custom user-defined kernels, and some other convolutions.
+							This was a team project for a CEGEP course in which I was the team leader and lead designer.</p>
+						<a class="button alt" href="https://github.com/William-Carbonneau/Image-Processing-Global-Illumination-and-Edge-Detection">Project Github Page</a>
+				</div>
+				</div>
+				</div>
+			</article>
 
 		</section>
 				<!-- Footer -->

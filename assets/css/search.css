@@ -20,6 +20,55 @@
 		overscroll-behavior: none;
 	}
 
+	.GalleryCol {
+		float: left;
+		width: 20%; 
+		padding: 10px;
+	}
+
+	.GalleryCol img {
+		opacity: 0.8;
+		cursor: pointer;
+	  }	  
+
+	.GalleryCol img:hover {
+		opacity: 1;
+	}
+
+	.GalleryRow:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.GalleryContainer {
+		position: relative;
+  		display: none;
+	}
+
+	/* Expanding image text */
+	#imgtext {
+		position: absolute;
+		bottom: 15px;
+		left: 15px;
+		color: white;
+		font-size: 20px;
+		-webkit-text-stroke-width: 1px;
+  		-webkit-text-stroke-color: black;
+		font-weight: bold;
+	}
+	
+	/* Closable button inside the image */
+	.closebtn {
+		position: absolute;
+		top: 10px;
+		right: 15px;
+		color: white;
+		font-size: 35px;
+		cursor: pointer;
+		-webkit-text-stroke-width: 1px;
+  		-webkit-text-stroke-color: black;
+	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
